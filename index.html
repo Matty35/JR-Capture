@@ -91,11 +91,14 @@
     }
 
     .nav__brand {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: 1.4rem;
-      letter-spacing: 0.02em;
-      color: var(--white);
+      display: flex;
+      align-items: center;
+    }
+
+    .nav__brand img {
+      height: 48px;
+      width: auto;
+      mix-blend-mode: lighten;
     }
 
     .nav__links {
@@ -781,12 +784,11 @@
       padding-bottom: 60px;
     }
 
-    .footer__brand-name {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: var(--white);
-      margin-bottom: 0.6rem;
+    .footer__brand-name img {
+      height: 64px;
+      width: auto;
+      mix-blend-mode: lighten;
+      margin-bottom: 0.75rem;
     }
 
     .footer__tagline {
@@ -939,7 +941,9 @@
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <a href="#hero" class="nav__brand">JR Capture</a>
+    <a href="#hero" class="nav__brand">
+      <img src="images/logo.jpg" alt="JR Capture" />
+    </a>
 
     <ul class="nav__links" role="list">
       <li><a href="#hero">Home</a></li>
@@ -1145,7 +1149,9 @@
 
       <!-- Brand -->
       <div class="footer__col">
-        <p class="footer__brand-name">JR Capture</p>
+        <div class="footer__brand-name">
+          <img src="images/logo.jpg" alt="JR Capture" />
+        </div>
         <p class="footer__tagline">Covering the Whole of the UK</p>
       </div>
 
