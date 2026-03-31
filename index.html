@@ -624,6 +624,315 @@
         padding: 60px 1.5rem;
       }
     }
+
+    /* ─── Contact ────────────────────────────────────────────────── */
+    #contact {
+      background-color: var(--black-soft);
+      padding: 100px 2.5rem;
+    }
+
+    .contact__inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .contact__label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--grey-mid);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact__heading {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 3rem;
+    }
+
+    .form-field {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-field label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--grey-mid);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      width: 100%;
+      background-color: var(--black);
+      border: 1px solid var(--grey-border);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      padding: 14px;
+      border-radius: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-field select option {
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    .form-field input::-webkit-calendar-picker-indicator {
+      filter: invert(0.5);
+      cursor: pointer;
+    }
+
+    .form-field textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--grey-mid);
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: var(--grey-border);
+    }
+
+    .contact__submit {
+      width: 100%;
+      background-color: var(--white);
+      color: var(--black);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0;
+      padding: 16px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background-color 0.25s ease;
+    }
+
+    .contact__submit:hover {
+      background-color: var(--grey-light);
+    }
+
+    .contact__success {
+      display: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      #contact {
+        padding: 80px 1.5rem;
+      }
+
+      .contact__heading {
+        font-size: 2rem;
+      }
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────────── */
+    #footer {
+      background-color: var(--black);
+      border-top: 1px solid var(--grey-border);
+      padding: 60px 2.5rem 0;
+    }
+
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+
+    .footer__brand-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+
+    .footer__tagline {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      color: var(--grey-mid);
+      line-height: 1.6;
+    }
+
+    .footer__col-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--grey-mid);
+      margin-bottom: 1rem;
+    }
+
+    .footer__contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer__contact-links a {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--white);
+      transition: opacity 0.2s ease;
+    }
+
+    .footer__contact-links a:hover {
+      opacity: 0.6;
+    }
+
+    .footer__social-icons {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    .footer__social-icons a {
+      color: var(--white);
+      transition: opacity 0.2s ease;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer__social-icons a:hover {
+      opacity: 0.6;
+    }
+
+    .footer__social-icons svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .footer__bottom {
+      border-top: 1px solid var(--grey-border);
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    .footer__bottom p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      color: var(--grey-mid);
+    }
+
+    @media (max-width: 768px) {
+      .footer__inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2.5rem;
+      }
+
+      .footer__social-icons {
+        justify-content: center;
+      }
+
+      #footer {
+        padding: 60px 1.5rem 0;
+      }
+    }
+
+    /* ─── Scroll Animations ──────────────────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Service card stagger — only delays the fade-in, not hover */
+    .service-card:nth-child(1).fade-up:not(.visible) { transition-delay: 0.1s; }
+    .service-card:nth-child(2).fade-up:not(.visible) { transition-delay: 0.2s; }
+    .service-card:nth-child(3).fade-up:not(.visible) { transition-delay: 0.3s; }
+
+    /* Service card hover needs its own transition once visible */
+    .service-card.fade-up.visible {
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Gallery item stagger */
+    .gallery-item:nth-child(1).fade-up:not(.visible)  { transition-delay: 0.05s; }
+    .gallery-item:nth-child(2).fade-up:not(.visible)  { transition-delay: 0.10s; }
+    .gallery-item:nth-child(3).fade-up:not(.visible)  { transition-delay: 0.15s; }
+    .gallery-item:nth-child(4).fade-up:not(.visible)  { transition-delay: 0.20s; }
+    .gallery-item:nth-child(5).fade-up:not(.visible)  { transition-delay: 0.25s; }
+    .gallery-item:nth-child(6).fade-up:not(.visible)  { transition-delay: 0.30s; }
+    .gallery-item:nth-child(7).fade-up:not(.visible)  { transition-delay: 0.35s; }
+    .gallery-item:nth-child(8).fade-up:not(.visible)  { transition-delay: 0.40s; }
+    .gallery-item:nth-child(9).fade-up:not(.visible)  { transition-delay: 0.45s; }
+    .gallery-item:nth-child(10).fade-up:not(.visible) { transition-delay: 0.50s; }
+    .gallery-item:nth-child(11).fade-up:not(.visible) { transition-delay: 0.55s; }
+    .gallery-item:nth-child(12).fade-up:not(.visible) { transition-delay: 0.60s; }
+
+    /* Gallery hover still works once visible */
+    .gallery-item.fade-up.visible {
+      transition: none;
+    }
+
+    .gallery-item.fade-up.visible img {
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item.fade-up.visible::after {
+      transition: background-color 0.4s ease;
+    }
+
+    /* Respect reduced-motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -668,7 +977,7 @@
 
   <!-- About -->
   <section id="about">
-    <div class="about__inner">
+    <div class="about__inner fade-up">
       <div class="about__text">
         <span class="about__label">About Us</span>
         <h2 class="about__heading">Premium Event Media, Nationwide</h2>
@@ -682,13 +991,13 @@
 
   <!-- Services -->
   <section id="services">
-    <div class="services__header">
+    <div class="services__header fade-up">
       <span class="services__label">Our Services</span>
       <h2 class="services__heading">What We Do</h2>
     </div>
     <div class="services__grid">
 
-      <article class="service-card">
+      <article class="service-card fade-up">
         <svg class="service-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="1" y="7" width="22" height="22" rx="1" stroke="currentColor" stroke-width="1.5"/>
           <path d="M23 14l10-5v18l-10-5V14z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
@@ -698,7 +1007,7 @@
         <p class="service-card__copy">Cinematic coverage of your event from start to finish, crafted into a film you will treasure forever.</p>
       </article>
 
-      <article class="service-card">
+      <article class="service-card fade-up">
         <svg class="service-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="2" y="8" width="32" height="22" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
           <circle cx="18" cy="19" r="6" stroke="currentColor" stroke-width="1.5"/>
@@ -709,7 +1018,7 @@
         <p class="service-card__copy">Stunning stills that capture the emotion, atmosphere and detail of every moment.</p>
       </article>
 
-      <article class="service-card">
+      <article class="service-card fade-up">
         <svg class="service-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="18" cy="18" r="15" stroke="currentColor" stroke-width="1.5"/>
           <circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="1.5"/>
@@ -731,31 +1040,31 @@
 
   <!-- Gallery -->
   <section id="gallery">
-    <div class="gallery__header">
+    <div class="gallery__header fade-up">
       <span class="gallery__label">Portfolio</span>
       <h2 class="gallery__heading">Our Work</h2>
     </div>
 
     <!-- GALLERY: Replace src paths with real images. Add or remove items as needed. -->
     <div class="gallery__grid">
-      <div class="gallery-item"><img src="images/photo-1.jpg"  alt="Event photography moment captured at a UK celebration" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-2.jpg"  alt="Candid wedding reception photography" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-3.jpg"  alt="Corporate event videography setup" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-4.jpg"  alt="Portrait of a couple during wedding ceremony" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-5.jpg"  alt="Detail shot of floral arrangements at a venue" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-6.jpg"  alt="Wide shot of a large corporate conference" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-7.jpg"  alt="Evening reception with ambient lighting" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-8.jpg"  alt="Bride and groom first dance photography" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-9.jpg"  alt="Outdoor summer event photography" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-10.jpg" alt="Behind the scenes videography at a product launch" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-11.jpg" alt="Close-up detail of event styling and décor" loading="lazy" /></div>
-      <div class="gallery-item"><img src="images/photo-12.jpg" alt="Group celebration shot at a milestone event" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-1.jpg"  alt="Event photography moment captured at a UK celebration" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-2.jpg"  alt="Candid wedding reception photography" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-3.jpg"  alt="Corporate event videography setup" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-4.jpg"  alt="Portrait of a couple during wedding ceremony" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-5.jpg"  alt="Detail shot of floral arrangements at a venue" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-6.jpg"  alt="Wide shot of a large corporate conference" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-7.jpg"  alt="Evening reception with ambient lighting" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-8.jpg"  alt="Bride and groom first dance photography" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-9.jpg"  alt="Outdoor summer event photography" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-10.jpg" alt="Behind the scenes videography at a product launch" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-11.jpg" alt="Close-up detail of event styling and décor" loading="lazy" /></div>
+      <div class="gallery-item fade-up"><img src="images/photo-12.jpg" alt="Group celebration shot at a milestone event" loading="lazy" /></div>
     </div>
   </section>
 
   <!-- Stats -->
   <section id="stats">
-    <div class="stats__inner">
+    <div class="stats__inner fade-up">
       <div class="stat-item">
         <span class="stat-item__value">UK-Wide</span>
         <span class="stat-item__label">Coverage</span>
@@ -775,20 +1084,128 @@
     </div>
   </section>
 
-  <section id="contact"></section>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact__inner fade-up">
+      <span class="contact__label">Get In Touch</span>
+      <h2 class="contact__heading">Let's Capture Your Event</h2>
 
-  <footer id="footer"></footer>
+      <form class="contact__form" name="jrcapture-contact" method="POST" data-netlify="true" id="contact-form" novalidate>
+        <input type="hidden" name="form-name" value="jrcapture-contact" />
+
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" />
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+44 7000 000000" autocomplete="tel" />
+        </div>
+
+        <div class="form-field">
+          <label for="event-type">Event Type</label>
+          <select id="event-type" name="event-type">
+            <option value="" disabled selected>Select event type</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Birthday Party">Birthday Party</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="event-date">Event Date</label>
+          <input type="date" id="event-date" name="event-date" />
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your event..."></textarea>
+        </div>
+
+        <button type="submit" class="contact__submit">Send Enquiry</button>
+      </form>
+
+      <div class="contact__success" id="contact-success" role="status" aria-live="polite">
+        Thank you — we'll be in touch soon.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer__inner fade-up">
+
+      <!-- Brand -->
+      <div class="footer__col">
+        <p class="footer__brand-name">JR Capture</p>
+        <p class="footer__tagline">Covering the Whole of the UK</p>
+      </div>
+
+      <!-- Contact details -->
+      <div class="footer__col">
+        <p class="footer__col-label">Contact Us</p>
+        <div class="footer__contact-links">
+          <a href="tel:07440383530">07440 383530</a>
+          <a href="mailto:info@jrcapture.co.uk">info@jrcapture.co.uk</a>
+        </div>
+      </div>
+
+      <!-- Social links -->
+      <div class="footer__col">
+        <p class="footer__col-label">Follow Us</p>
+        <div class="footer__social-icons">
+
+          <!-- Instagram -->
+          <a href="#" aria-label="JR Capture on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" aria-label="JR Capture on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="#" aria-label="JR Capture on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 9l5 3-5 3V9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 JR Capture. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script>
     // ── Nav: transparent → solid on scroll ──────────────────────────
-    const nav = document.querySelector('.nav');
+    const nav  = document.querySelector('.nav');
     const hero = document.getElementById('hero');
 
-    const observer = new IntersectionObserver(
+    new IntersectionObserver(
       ([entry]) => nav.classList.toggle('scrolled', !entry.isIntersecting),
       { threshold: 0.1 }
-    );
-    observer.observe(hero);
+    ).observe(hero);
 
     // ── Hamburger toggle ─────────────────────────────────────────────
     const hamburger   = document.getElementById('hamburger');
@@ -810,6 +1227,52 @@
     });
 
     mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+    // ── Scroll animations ─────────────────────────────────────────────
+    const fadeObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            fadeObserver.unobserve(entry.target); // animate once only
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+
+    // ── Contact form: Netlify submission with success state ───────────
+    const contactForm    = document.getElementById('contact-form');
+    const contactSuccess = document.getElementById('contact-success');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const data     = new FormData(contactForm);
+        const encoded  = new URLSearchParams(data).toString();
+
+        try {
+          const res = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encoded,
+          });
+
+          if (res.ok) {
+            contactForm.style.display = 'none';
+            contactSuccess.style.display = 'block';
+          } else {
+            // Fallback: let Netlify handle it natively
+            contactForm.submit();
+          }
+        } catch {
+          contactForm.submit();
+        }
+      });
+    }
   </script>
 </body>
 </html>
