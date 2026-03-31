@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JR Capture | Event Videography &amp; Photography UK</title>
+  <meta name="description" content="Bespoke event videography and photography covering the whole of the UK" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JR Capture | Event Videography &amp; Photography UK" />
+  <meta property="og:description" content="Bespoke event videography and photography covering the whole of the UK" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="JR Capture" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Colour Palette ─────────────────────────────────────────── */
+    :root {
+      --black:        #0a0a0a;
+      --black-soft:   #111111;
+      --white:        #ffffff;
+      --grey-mid:     #888888;
+      --grey-light:   #e0e0e0;
+      --grey-border:  #2a2a2a;
+    }
+
+    /* ─── Reset ──────────────────────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Base ───────────────────────────────────────────────────── */
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img, video {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    /* ─── Navigation ─────────────────────────────────────────────── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2rem;
+      background-color: var(--black);
+      border-bottom: 1px solid var(--grey-border);
+    }
+
+    .nav__brand {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.375rem;
+      letter-spacing: 0.02em;
+      color: var(--white);
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .nav__links a {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--grey-mid);
+      transition: color 0.2s ease;
+    }
+
+    .nav__links a:hover {
+      color: var(--white);
+    }
+
+    .nav__hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.25rem;
+    }
+
+    .nav__hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background-color: var(--white);
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    @media (max-width: 768px) {
+      .nav__links {
+        display: none;
+      }
+
+      .nav__hamburger {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__brand">JR Capture</a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Sections -->
+  <section id="hero"></section>
+
+  <section id="about"></section>
+
+  <section id="services"></section>
+
+  <section id="gallery"></section>
+
+  <section id="stats"></section>
+
+  <section id="contact"></section>
+
+  <footer id="footer"></footer>
+
+</body>
+</html>
